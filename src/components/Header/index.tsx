@@ -1,9 +1,9 @@
-import React from 'react';
+import {FC} from "react";
 
 /**
  * Component File Description
  */
-const Header: React.FC<any> = () => {
+const Header: FC<any> = () => {
     return (
         <>
             <h1>Header</h1>

@@ -1,17 +1,17 @@
-import React, {memo} from 'react';
+import {FC, memo} from 'react';
 import {IButtonProps} from "./type";
 
 /**
  * Component File Description
  */
-const Button: React.FC<IButtonProps> = ({
-                                            primary = false,
-                                            size = 'medium',
-                                            backgroundColor,
-                                            label,
-                                            adornment,
-                                            ...props
-                                        }) => {
+const Button: FC<IButtonProps> = ({
+                                      primary = false,
+                                      size = 'medium',
+                                      backgroundColor,
+                                      label,
+                                      adornment,
+                                      ...props
+                                  }) => {
     const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
     return (
         <button
